@@ -42,4 +42,4 @@ The truth is that it is simply not a crucial thing to have. Multiple distributio
 
 While it is not perfect, kpkg is focused on the right things at the right time and continue in that way.
 
-If you have any questions, you can write [at my email](mailto:kreato@kreato.dev).
+If you have any questions, you can write [at my email](mailto:kreato@krea.to).

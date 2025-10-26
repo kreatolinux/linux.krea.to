@@ -12,7 +12,7 @@ olderPosts = "Older posts"
 missingContentMessage = "Page not found..."
 missingBackButtonLabel = "Back to home page"
 author = "Kreato Linux"
-copyright = "© [Kreato](https://kreato.dev) and Kreato Linux contributors"
+copyright = "© [Kreato](https://krea.to) and Kreato Linux contributors"
 
 [markup]
 defaultMarkdownHandler = 'goldmark'
@@ -37,11 +37,6 @@ It is inspired from projects such as KISS Linux, Gentoo and Arch Linux. Its main
 icon = "fa-brands fa-github"
 title = "GitHub"
 url = "https://github.com/kreatolinux"
-
-[[params.socialLinks]]
-icon = "fa-solid fa-code-merge"
-title = "Forgejo mirror"
-url = "https://git.kreato.dev/kreatolinux"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-discord"
@@ -123,7 +118,7 @@ url = "https://github.com/sponsors/kreatoo"
   [[menu.main]]
     identifieer = "Packages"
     name = "Packages"
-    url = "https://pkgs.kreato.dev"
+    url = "https://pkgs.krea.to"
   [[menu.main]]
     identifier = "Source"
     name = "Source"

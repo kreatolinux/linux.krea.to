@@ -29,7 +29,7 @@ Any basic issues/anything not related to Kreato Linux will be closed without war
 
 
 ## Get rootfs tarball
-First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [The downloads page](https://linux.kreato.dev/downloads/)
+First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [The downloads page](https://linux.krea.to/downloads/)
 
 ### Choosing the right tarball
 Kreato Linux is a modular distribution. There are four build types currently available.
