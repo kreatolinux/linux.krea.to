@@ -61,7 +61,7 @@ jobs:
           git clone https://github.com/kreatolinux/src
           cd src
           nimble install cligen fusion norm -y
-          make genpkglist
+          ./build.sh -p genpkglist -a '-d:disableGeneratecmd'
           sudo mv out/genpkglist /bin
           cd ..
       
