@@ -77,6 +77,20 @@ jobs:
           genpkglist generate --all --pkgPath=kpkg-repo --output="$GITHUB_WORKSPACE/content/packages/" -v      
           rm -rf kpkg-repo
 
+      - name: Patch package frontmatter
+        run: |
+          #TODO: REMOVE WHEN V8
+          find content/packages -name "_index.md" | while read -r f; do
+            awk '{
+              if ($0 ~ /type: docs/) {
+                print "type: \"package\""
+                print "layout: list"
+              } else {
+                print $0
+              }
+            }' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
+          done
+
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
