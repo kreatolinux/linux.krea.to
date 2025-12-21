@@ -47,7 +47,7 @@ jobs:
           cd src
           nimble install cligen fusion norm -y
           ./build.sh -p genpkglist -a '-d:disableGeneratecmd'
-          sudo mv out/genpkglist /bin
+          mv out/genpkglist /bin
           cd ..
       
       - name: Add manpages to documentation
