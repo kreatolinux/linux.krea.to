@@ -80,7 +80,7 @@ jobs:
       - name: Patch package frontmatter
         run: |
           #TODO: REMOVE WHEN V8
-          find content/packages -name "_index.md" | while read -r f; do
+          find content/packages -name "*.md" ! -name "_index.md" | while read -r f; do
             awk '{
               if ($0 ~ /type: docs/) {
                 print "type: \"package\""
