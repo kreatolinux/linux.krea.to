@@ -1,7 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-theme = "risotto"
-paginate = 5
+theme = "klinuxified-risotto"
 title = "Kreato Linux"
 subtitle = "Tinkerer's Linux distribution"
 menuMore = "Show more"
@@ -14,8 +13,15 @@ missingBackButtonLabel = "Back to home page"
 author = "Kreato Linux"
 copyright = "© [Kreato](https://krea.to) and Kreato Linux contributors"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[pagination]
+pagerSize = 5
 [markup]
 defaultMarkdownHandler = 'goldmark'
+[markup.goldmark.renderer]
+  unsafe = true
 [markup.highlight]
   codeFences = true
   guessSyntax = true
@@ -24,7 +30,7 @@ defaultMarkdownHandler = 'goldmark'
   lineNumbersInTable = true
 
 [params.theme]
-palette = "base16-catppuccin-mocha"
+palette = "everforest-dark"
 
 [params.about]
 title = "Kreato Linux"
@@ -47,6 +53,10 @@ url = "https://discord.gg/5vTYnkepX6"
 icon = "fa-solid fa-heart"
 title = "GitHub Sponsors"
 url = "https://github.com/sponsors/kreatoo"
+
+[params.search]
+placeholder = "Search packages, docs, blog..."
+# truncateContent = 5000
 
 [params]
   # dir name of your main content (default is `content/posts`).
@@ -116,9 +126,9 @@ url = "https://github.com/sponsors/kreatoo"
     name = "Documentation"
     url = "/docs"
   [[menu.main]]
-    identifieer = "Packages"
+    identifier = "Packages"
     name = "Packages"
-    url = "https://pkgs.krea.to"
+    url = "/packages"
   [[menu.main]]
     identifier = "Source"
     name = "Source"
