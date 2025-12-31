@@ -41,20 +41,20 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Build genpkglist
+      - name: Build run3tools
         run: |
           git clone https://github.com/kreatolinux/src
           cd src
           nimble install cligen fusion norm -y
-          ./build.sh -p genpkglist
-          mv out/genpkglist /bin
+          ./build.sh -p run3tools
+          mv out/run3tools /bin
           cd ..
       
       - name: Add manpages to documentation
         run: |
           cd src
           for i in man/*.md; do
-            genpkglist generateManpage --file="$i" --output="$GITHUB_WORKSPACE/content/docs/manpages/$(basename $i)"
+            run3tools generateManpage --file="$i" --output="$GITHUB_WORKSPACE/content/docs/manpages/$(basename $i)"
           done
           cd ..
           rm -rf src
@@ -74,7 +74,7 @@ jobs:
         run: |
           git clone https://github.com/kreatolinux/kpkg-repo
           mkdir -p "$GITHUB_WORKSPACE/content"
-          genpkglist generate --all --pkgPath=kpkg-repo --output="$GITHUB_WORKSPACE/content/packages/" -v      
+          run3tools generate --all --pkgPath=kpkg-repo --output="$GITHUB_WORKSPACE/content/packages/" -v      
           rm -rf kpkg-repo
 
       - name: Patch package frontmatter
