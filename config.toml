@@ -30,7 +30,7 @@ defaultMarkdownHandler = 'goldmark'
   lineNumbersInTable = true
 
 [params.theme]
-palette = "everforest-dark"
+palette = "windows-95"
 
 [params.about]
 title = "Kreato Linux"
