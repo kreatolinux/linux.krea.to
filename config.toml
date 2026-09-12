@@ -30,7 +30,7 @@ defaultMarkdownHandler = 'goldmark'
   lineNumbersInTable = true
 
 [params.theme]
-palette = "windows-95"
+palette = "dracula"
 
 [params.about]
 title = "Kreato Linux"
@@ -59,6 +59,7 @@ placeholder = "Search packages, docs, blog..."
 # truncateContent = 5000
 
 [params]
+  logo = "android-chrome-192x192.png"
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
