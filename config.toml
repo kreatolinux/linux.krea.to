@@ -114,6 +114,11 @@ placeholder = "Search packages, docs, blog..."
 
 [menu]
   [[menu.main]]
+    identifier = "Kongue"
+    name = "Kongue"
+    url = "/kongue"
+    weight = 1
+  [[menu.main]]
     identifier = "Downloads"
     name = "Downloads"
     url = "/downloads"
@@ -125,10 +130,6 @@ placeholder = "Search packages, docs, blog..."
     identifier = "Documentation"
     name = "Documentation"
     url = "/docs"
-  [[menu.main]]
-    identifier = "Kongue"
-    name = "Kongue"
-    url = "/kongue"
   [[menu.main]]
     identifier = "Packages"
     name = "Packages"
