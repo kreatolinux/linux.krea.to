@@ -126,6 +126,10 @@ placeholder = "Search packages, docs, blog..."
     name = "Documentation"
     url = "/docs"
   [[menu.main]]
+    identifier = "Kongue"
+    name = "Kongue"
+    url = "/kongue"
+  [[menu.main]]
     identifier = "Packages"
     name = "Packages"
     url = "/packages"

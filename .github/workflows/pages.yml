@@ -48,6 +48,11 @@ jobs:
           nimble install cligen fusion norm regex -y
           ./build.sh -p run3tools
           mv out/run3tools /bin
+          mkdir -p "$GITHUB_WORKSPACE/static/js"
+          nim js -d:release -d:posix \
+            --path="$GITHUB_WORKSPACE/src/kongue" \
+            -o="$GITHUB_WORKSPACE/static/js/kongue.js" \
+            "$GITHUB_WORKSPACE/tools/kongue_playground.nim"
           cd ..
       
       - name: Add manpages to documentation
